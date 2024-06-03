@@ -57,10 +57,8 @@ const keysDir = [
 
 let allKeys = document.getElementById("keys");
 
-console.log(allKeys);
-for (let i = 0; i < 9; i++) {
+for (let i = 0; i < keysDir.length; i++) {
   let key = keysDir[i];
-  console.log(key);
 
   let div = document.createElement("div");
   div.classList.add("key");
