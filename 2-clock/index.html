@@ -8,13 +8,18 @@
     <title>Clock</title>
 </head>
 <body>
-    <div class="clock">
-        <div class="clock-face">
-            <div class="hand hour-hand"></div>
-            <div class="hand min-hand"></div>
-            <div class="hand second-hand"></div>
-            
+    <button id="mute" type="radio" onclick="mute()">unmute</button>
+    <div>
+        <div class="clock">
+            <div class="clock-face">
+                <div class="hand hour-hand"></div>
+                <div class="hand min-hand"></div>
+                <div class="hand second-hand"></div>
+        
+            </div>
         </div>
+        <audio data-sound="tick" src="sounds/tick.m4a"></audio>
+        <audio data-sound="tock" src="sounds/tock.m4a"></audio>
     </div>
 </body>
 </html>
