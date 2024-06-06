@@ -1,12 +1,14 @@
 html {
-  background: rgb(143, 143, 214) url(https://picsum.photos/2000/1500?grayscale&blur=8);
+  background: rgb(143, 143, 214)
+    url(https://picsum.photos/2000/1500?grayscale&blur=8);
   background-size: cover;
   text-align: center;
   font-size: 10px;
   font-family: "helvetica neue";
+  overflow-y: hidden;
 }
 
-body>div{
+body > div {
   font-size: 2rem;
   display: flex;
   flex: 1;
@@ -26,11 +28,11 @@ body>div{
     inset 0 0 0 3px black, 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.clock-face{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform: translateY(-3px);
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
 }
 
 .hand {
@@ -44,32 +46,33 @@ body>div{
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0, 4.36, 0, 0.99);
   border: black solid 1px;
-
 }
 
-.second-hand{
-    background: lightgray;
-    height: 3px;
+.second-hand {
+  background: lightgray;
+  height: 3px;
 }
 
-
-.min-hand{
-    background: gray;
-
+.min-hand {
+  background: gray;
 }
 
-.number{
+.hour-hand{
+  border-color: white;
+}
+
+.number {
   width: 100%;
   height: 100%;
   position: absolute;
   color: white;
 }
 
-.number>div{
+.number > div {
   font-weight: 600;
 }
 
-body>#mute{
+body > #mute {
   border: black dotted 3px;
   font-weight: 800;
   border-radius: 25%;

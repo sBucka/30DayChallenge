@@ -94,6 +94,15 @@ function playSound(e) {
   key.classList.add("playing");
 }
 
+function playSoundClick() {
+  const myKeyCode = this.getAttribute("data-key");
+  const audio = document.querySelector(`audio[data-key="${myKeyCode}"]`);
+  audio.currentTime = 0;
+  audio.play();
+  this.classList.add("playing");
+}
+
 const keys = document.querySelectorAll(".key");
 keys.forEach((key) => key.addEventListener("transitionend", removeTransition));
+keys.forEach((key) => key.addEventListener("click", playSoundClick));
 window.addEventListener("keydown", playSound);
