@@ -58,8 +58,6 @@ const keysDir = [
 let allKeys = document.getElementById("keys");
 
 for (let i = 0; i < keysDir.length; i++) {
-  let key = keysDir[i];
-
   let div = document.createElement("div");
   div.classList.add("key");
   div.dataset.key = keysDir[i].data_key;
