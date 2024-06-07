@@ -6,6 +6,7 @@ const projects = [
   "css-variables",
   "array-cardio-1",
   "image-gallery",
+  "ajax",
 ];
 
 function stringUpdate(str) {

@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  background-color: rgb(253, 225, 136);
+}
+
+input {
+  width: 500px;
+  height: 50px;
+  font-size: 1.6rem;
+  border-radius: 20px;
+  padding: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  border: black solid 1px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  width: 500px;
+  transition: all 0.2s;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.972), 0 0 14px rgba(0, 0, 0, 0.472);
+}
+
+.name {
+  font-weight: 600;
+}
+
+.hl {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px){
+    li, input, ul{
+        width: 80vw;
+    }
+}
