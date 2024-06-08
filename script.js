@@ -7,6 +7,8 @@ const projects = [
   "array-cardio-1",
   "image-gallery",
   "ajax",
+  "array-cardio-2",
+  "canvas",
 ];
 
 function stringUpdate(str) {
@@ -14,9 +16,9 @@ function stringUpdate(str) {
 
   str.forEach((word, i) => {
     str[i] = word.charAt(0).toUpperCase() + word.substr(1);
-    });
+  });
 
-  return result = str.join(" ");
+  return (result = str.join(" "));
 }
 
 projects.forEach((project, i) => {
@@ -31,10 +33,10 @@ projects.forEach((project, i) => {
   let heading = document.createElement("h2");
   heading.innerHTML = stringUpdate(project);
 
-  a.appendChild(img)
-  a.appendChild(heading)
+  a.appendChild(img);
+  a.appendChild(heading);
 
-  div.appendChild(a)
+  div.appendChild(a);
 
-  links.appendChild(div)
+  links.appendChild(div);
 });
