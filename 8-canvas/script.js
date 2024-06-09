@@ -8,7 +8,7 @@ ctx.strokeStyle = "#BADA55";
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
 ctx.lineWidth = 12;
-//ctx.globalCompositeOperation = "soft-light";
+ctx.globalCompositeOperation = "soft-light"
 
 let isDrawing = false;
 let lastX = 0;
@@ -47,42 +47,3 @@ canvas.addEventListener("mousedown", (e) => {
 });
 canvas.addEventListener("mouseup", () => (isDrawing = false));
 canvas.addEventListener("mouseout", () => (isDrawing = false));
-
-function drawTouch(e) {
-  if (!isDrawing) return; // Stop function
-  var touch = e.touches[0];
-
-  ctx.strokeStyle = `hsl(${hue},100%,50%)`;
-  ctx.beginPath();
-  ctx.moveTo(lastX, lastY);
-  ctx.lineTo(
-    touch.pageX - touch.target.offsetLeft,
-    touch.pageY - touch.target.offsetTop
-  );
-  ctx.stroke();
-  lastX = touch.pageX - touch.target.offsetLeft;
-  lastY = touch.pageY - touch.target.offsetTop;
-
-  hue++;
-  if (hue > 360) hue = 0;
-  if (ctx.lineWidth >= 40 || ctx.lineWidth <= 3) {
-    direction = !direction;
-  }
-  if (direction) {
-    ctx.lineWidth++;
-  } else {
-    ctx.lineWidth--;
-  }
-  console.log(lastX, lastY);
-}
-
-canvas.addEventListener("touchmove", drawTouch);
-canvas.addEventListener("touchstart", (e) => {
-  var touch = e.touches[0];
-  isDrawing = true;
-  lastX = touch.pageX - touch.target.offsetLeft;
-  lastY = touch.pageY - touch.target.offsetTop;
-  console.log(lastX, lastY);
-});
-canvas.addEventListener("touchend", () => (isDrawing = false));
-canvas.addEventListener("touchcancel", () => (isDrawing = false));
