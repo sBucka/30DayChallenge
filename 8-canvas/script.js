@@ -8,7 +8,7 @@ ctx.strokeStyle = "#BADA55";
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
 ctx.lineWidth = 12;
-ctx.globalCompositeOperation = "soft-light";
+//ctx.globalCompositeOperation = "soft-light";
 
 let isDrawing = false;
 let lastX = 0;
@@ -55,7 +55,10 @@ function drawTouch(e) {
   ctx.strokeStyle = `hsl(${hue},100%,50%)`;
   ctx.beginPath();
   ctx.moveTo(lastX, lastY);
-  ctx.lineTo(touch.pageX - touch.target.offsetLeft, touch.pageY - touch.target.offsetTop);
+  ctx.lineTo(
+    touch.pageX - touch.target.offsetLeft,
+    touch.pageY - touch.target.offsetTop
+  );
   ctx.stroke();
   lastX = touch.pageX - touch.target.offsetLeft;
   lastY = touch.pageY - touch.target.offsetTop;

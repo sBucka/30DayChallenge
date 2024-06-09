@@ -9,6 +9,8 @@ const projects = [
   "ajax",
   "array-cardio-2",
   "canvas",
+  "must-know-dev-tools",
+  "hold-shift-to-check-multiple-checkboxes",
 ];
 
 function stringUpdate(str) {
