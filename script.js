@@ -11,6 +11,9 @@ const projects = [
   "canvas",
   "must-know-dev-tools",
   "hold-shift-to-check-multiple-checkboxes",
+  "custom-html5-video-player",
+  "key-sequence-detection",
+  "slide-in-on-scroll",
 ];
 
 function stringUpdate(str) {
@@ -26,7 +29,11 @@ function stringUpdate(str) {
 projects.forEach((project, i) => {
   let div = document.createElement("div");
   let a = document.createElement("a");
-  a.href = `${i + 1}-${project}/index.html`;
+  let indexStr = `${i + 1}`;
+  if (indexStr.length == 1) {
+    indexStr = `0` + indexStr;
+  }
+  a.href = `${indexStr}-${project}/index.html`;
 
   let img = document.createElement("img");
   img.src = `images/${project}.png`;
