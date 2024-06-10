@@ -8,7 +8,7 @@ ctx.strokeStyle = "#BADA55";
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
 ctx.lineWidth = 12;
-ctx.globalCompositeOperation = "soft-light"
+//ctx.globalCompositeOperation = "soft-light"
 
 let isDrawing = false;
 let lastX = 0;
