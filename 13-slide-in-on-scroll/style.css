@@ -58,7 +58,12 @@ body {
   transform: translateX(30%) scale(0.5);
 }
 
-.slide-in.active {
+.align-left.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1) rotateY(180deg);
+}
+
+.align-right.slide-in.active {
   opacity: 1;
   transform: translateX(0%) scale(1);
 }
