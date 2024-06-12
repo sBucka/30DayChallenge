@@ -1,10 +1,10 @@
 const addItems = document.querySelector(".add-items");
 const itemsList = document.querySelector(".plates");
-const items = JSON.parse(localStorage.getItem("items")) || [];
+let items = JSON.parse(localStorage.getItem("items")) || [];
 
 function addItem(e) {
   e.preventDefault();
-  const text = this.querySelector("[name=item").value;
+  const text = this.querySelector("[name=item]").value;
   const item = {
     text,
     done: false,
@@ -13,8 +13,6 @@ function addItem(e) {
   populateList(items, itemsList);
   localStorage.setItem("items", JSON.stringify(items));
 
-  console.log(item);
-  console.log(items);
   this.reset();
 }
 
@@ -48,15 +46,34 @@ populateList(items, itemsList);
 
 // my part
 
-function checkAll() {
+function check(myCheck) {
+  let list = document.querySelectorAll('input[type="checkbox"]');
+
+  list.forEach((item) =>
+    myCheck
+      ? item.setAttribute("checked", "checked")
+      : item.removeAttribute("checked")
+  );
   items.forEach((item) => {
-    item.done = true;
-    item.checked = true
+    item.done = myCheck;
   });
   localStorage.setItem("items", JSON.stringify(items));
-  console.log(items);
 }
 
 const btnCheckAll = document.getElementById("checkAll");
-console.log(btnCheckAll);
-btnCheckAll.addEventListener("click", checkAll);
+btnCheckAll.addEventListener("click", () => check(true));
+
+const btnUnCheckAll = document.getElementById("uncheckAll");
+btnUnCheckAll.addEventListener("click", () => check(false));
+
+const btnClearAll = document.getElementById("clearAll");
+btnClearAll.addEventListener("click", () => {
+  if (!itemsList.innerHTML) return;
+  let list = itemsList.querySelectorAll("li");
+  list.forEach((item) => item.remove());
+
+  itemsList.innerHTML = "<li>Tapas deleted...</li>";
+  items = [];
+
+  localStorage.setItem("items", JSON.stringify(items));
+});

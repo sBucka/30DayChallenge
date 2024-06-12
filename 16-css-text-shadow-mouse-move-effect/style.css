@@ -1,0 +1,11 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 7rem;
+    text-shadow: 10px 10px 0 rgba(0, 0, 0, .1);
+}

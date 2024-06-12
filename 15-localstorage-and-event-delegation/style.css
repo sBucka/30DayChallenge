@@ -114,5 +114,11 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.buttons {
+.buttons button {
+  flex: 1;
+  height: 38px;
+}
+
+button:hover {
+  font-size: 1.1rem;
 }

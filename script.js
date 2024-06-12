@@ -14,6 +14,9 @@ const projects = [
   "custom-html5-video-player",
   "key-sequence-detection",
   "slide-in-on-scroll",
+  "object-and-arrays",
+  "localstorage-and-event-delegation",
+  "css-text-shadow-mouse-move-effect"
 ];
 
 function stringUpdate(str) {
