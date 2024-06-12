@@ -59,7 +59,7 @@ class CreateFolder:
         self.createJs()
 
 if __name__ == "__main__":
-    cf = CreateFolder("16 CSS Text Shadow Mouse Move Effect")
+    cf = CreateFolder("18 Tally String Times with Reduce")
     cf.createAll()
     
     

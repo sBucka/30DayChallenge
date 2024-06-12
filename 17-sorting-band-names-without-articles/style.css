@@ -1,0 +1,31 @@
+body {
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(133, 204, 205, 1) 0%,
+    rgba(255, 224, 156, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+body > div {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 12px;
+  box-shadow: 0 0 30px black, 15px 15px 10px rgba(0, 0, 0, 0.6);
+  gap:30px
+}
+label{
+    padding-left: 20px;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+ul{
+    margin: 0;
+  text-align: left;
+  list-style:  circle;
+}

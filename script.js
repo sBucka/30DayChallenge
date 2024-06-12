@@ -16,7 +16,9 @@ const projects = [
   "slide-in-on-scroll",
   "object-and-arrays",
   "localstorage-and-event-delegation",
-  "css-text-shadow-mouse-move-effect"
+  "css-text-shadow-mouse-move-effect",
+  "sorting-band-names-without-articles",
+  "tally-string-times-with-reduce",
 ];
 
 function stringUpdate(str) {
