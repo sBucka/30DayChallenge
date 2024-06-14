@@ -1,20 +1,50 @@
-body {
+html {
   display: flex;
   justify-content: center;
-  background-color: rgb(252, 146, 108);
+  background: linear-gradient(
+    15deg,
+    rgb(252, 146, 108) 0%,
+    rgb(255, 68, 0) 100%
+  );
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+.photobooth {
+  width: 640px;
+  background-color: white;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 15px;
+  padding: 10px;
+}
 .controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
 }
-.buttons {
-  margin-right: 20px;
+
+.rgb {
   display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-right: 0;
+  flex-direction: row;
+}
+
+.rgb > div {
+  display: flex;
+  flex-direction: column;
+  width: 202px;
+}
+.rgb > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 button {
@@ -37,21 +67,47 @@ button:hover {
 .strip img {
   width: 160px;
 }
-
-.photobooth {
-  width: 640px;
-  background-color: white;
-  border-radius: 15px;
-  padding: 10px;
-}
-.strip a{
-    transition: transform .3s;
+.strip a {
+  transition: transform 0.3s;
 }
 .strip a:hover {
-    transform: scale(1.33);
-    z-index: 10;
+  transform: scale(1.33);
+  z-index: 10;
 }
 
 .strip img:hover {
-    border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* My sliders */
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+  margin: 0;
+  padding: 0 10px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  background-color: orangered;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  background-color: rgb(255, 115, 64);
 }

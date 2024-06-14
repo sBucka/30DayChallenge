@@ -12,27 +12,40 @@
       <div class="controls">
         <button onclick="takePhoto()">Take photo</button>
         <div class="rgb">
-          <label for="rmin">rmin</label>
-          <input type="range" min="0" max="255" name="rmin" />
-          <label for="rmax">rmax </label>
-          <input type="range" min="0" max="255" name="rmax" />
-          <br />
-          <label for="gmin">gmin</label>
-          <input type="range" min="0" max="255" name="gmin" />
-          <label for="gmax">gmax</label>
-          <input type="range" min="0" max="255" name="gmax" />
-          <br />
-          <label for="bmin">bmin</label>
-          <input type="range" min="0" max="255" name="bmin" />
-          <label for="bmax">bmax</label>
-          <input type="range" min="0" max="255" name="bmax" />
-          <br />
+          <div>
+            <div>
+              <label for="rmin">rmin</label>
+              <input type="range" min="0" max="255" name="rmin" />
+            </div>
+            <div>
+              <label for="gmin">gmin</label>
+              <input type="range" min="0" max="255" name="gmin" />
+            </div>
+            <div>
+              <label for="bmin">bmin</label>
+              <input type="range" min="0" max="255" name="bmin" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <label for="gmax">gmax</label>
+              <input type="range" min="0" max="255" name="gmax" />
+            </div>
+            <div>
+              <label for="rmax">rmax </label>
+              <input type="range" min="0" max="255" name="rmax" />
+            </div>
+            <div>
+              <label for="bmax">bmax</label>
+              <input type="range" min="0" max="255" name="bmax" />
+            </div>
+          </div>
         </div>
       </div>
 
       <canvas class="photo"> </canvas>
-      <video class="player" hidden></video>
       <div class="strip"></div>
+      <video class="player" hidden></video>
     </div>
     <audio src="snap.wav" class="snap" hidden></audio>
   </body>
