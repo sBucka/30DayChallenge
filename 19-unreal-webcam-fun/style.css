@@ -59,6 +59,13 @@ button:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.422);
 }
 
+.filters{
+  display: flex;
+  margin-bottom: 20px;
+}
+.filters button{
+  flex: 1 0
+}
 .strip {
   display: flex;
   flex-wrap: wrap;
@@ -110,4 +117,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 input[type="range"]:hover::-webkit-slider-thumb {
   background-color: rgb(255, 115, 64);
+}
+
+.active{
+  background-color: red;
 }

@@ -20,6 +20,7 @@ const projects = [
   "sorting-band-names-without-articles",
   "tally-string-times-with-reduce",
   "unreal-webcam-fun",
+  "native-speech-recognition",
 ];
 
 function stringUpdate(str) {
