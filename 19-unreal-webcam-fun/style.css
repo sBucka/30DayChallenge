@@ -22,6 +22,11 @@ html {
   border-radius: 15px;
   padding: 10px;
 }
+
+@media only screen and (max-width: 640px){
+  .photobooth {
+    width: 97vw;}
+}
 .controls {
   display: flex;
   justify-content: space-between;

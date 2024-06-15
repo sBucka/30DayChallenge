@@ -21,6 +21,7 @@ const projects = [
   "tally-string-times-with-reduce",
   "unreal-webcam-fun",
   "native-speech-recognition",
+  "geolocation",
 ];
 
 function stringUpdate(str) {
