@@ -23,6 +23,7 @@ const projects = [
   "native-speech-recognition",
   "geolocation",
   "follow-along-links",
+  "speech-synthesis",
 ];
 
 function stringUpdate(str) {
