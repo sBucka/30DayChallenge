@@ -59,7 +59,7 @@ class CreateFolder:
         self.createJs()
 
 if __name__ == "__main__":
-    cf = CreateFolder("21 Geolocation")
+    cf = CreateFolder("22 Follow Along Links")
     cf.createAll()
     
     

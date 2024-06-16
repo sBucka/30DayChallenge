@@ -22,6 +22,7 @@ const projects = [
   "unreal-webcam-fun",
   "native-speech-recognition",
   "geolocation",
+  "follow-along-links",
 ];
 
 function stringUpdate(str) {
