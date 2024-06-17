@@ -1,0 +1,103 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#text {
+  background-image: url(https://picsum.photos/1600/180);
+  height: 180px;
+  width: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#text > h1 {
+  text-shadow: 1px 1px 5px black, -1px -1px 5px black, -1px 1px 5px black,
+    1px -1px 5px black;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(0, 0, 0);
+  z-index: 1;
+  transition: all 0.5s;
+  top: 0;
+  width: 100%;
+}
+
+.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.793);
+}
+
+nav > ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  max-width: 832px;
+}
+nav li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+li.logo {
+  max-width: 0;
+  overflow: hidden;
+  background-color: white;
+  transition: all 1.5s;
+  font-weight: 600;
+  font-size: 30px;
+}
+li.logo a {
+  color: black;
+}
+li.logo:hover a {
+  text-shadow: 1px 1px rgba(210, 122, 254, 0.688),
+    1px -1px rgba(122, 217, 254, 0.688), -1px 1px rgba(184, 254, 122, 0.688),
+    -1px -1px rgba(254, 131, 122, 0.688);
+}
+.fixed-nav li.logo {
+  max-width: 500px;
+}
+.fixed-nav article {
+  transform: scale(1);
+}
+article {
+  padding: 1rem;
+  max-width: 800px;
+  text-align: justify;
+  display: block;
+  background-color: white;
+  margin: 30px auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.705);
+  transition: all 0.5s;
+  transform: scale(0.98);
+}
+
+article > div {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}

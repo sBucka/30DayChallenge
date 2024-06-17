@@ -24,6 +24,7 @@ const projects = [
   "geolocation",
   "follow-along-links",
   "speech-synthesis",
+  "sticky-nav",
 ];
 
 function stringUpdate(str) {
