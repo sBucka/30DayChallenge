@@ -59,7 +59,7 @@ class CreateFolder:
         self.createJs()
 
 if __name__ == "__main__":
-    cf = CreateFolder("24 Sticky Nav")
+    cf = CreateFolder("25 Event Capture")
     cf.createAll()
     
     
