@@ -26,6 +26,7 @@ const projects = [
   "speech-synthesis",
   "sticky-nav",
   "event-capture",
+  "stripe-follow-along-dropdown",
 ];
 
 function stringUpdate(str) {
