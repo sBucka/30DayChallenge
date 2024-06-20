@@ -27,6 +27,7 @@ const projects = [
   "sticky-nav",
   "event-capture",
   "stripe-follow-along-dropdown",
+  "click-and-drag-to-scroll",
 ];
 
 function stringUpdate(str) {

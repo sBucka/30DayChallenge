@@ -59,7 +59,7 @@ class CreateFolder:
         self.createJs()
 
 if __name__ == "__main__":
-    cf = CreateFolder("26 Stripe Follow Along Dropdown")
+    cf = CreateFolder("27 Click and Drag to Scroll")
     cf.createAll()
     
     
