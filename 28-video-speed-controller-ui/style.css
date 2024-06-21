@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.612) 0%,
+      rgba(45, 36, 36, 0.6) 45%,
+      rgba(255, 255, 255, 0.423) 100%
+    ),
+    linear-gradient(-90deg, rgba(14, 14, 89, 0.569), rgb(251, 218, 127));
+}
+
+.wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+video {
+  max-width: calc(70vw - 50px);
+}
+
+.speed {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  min-width: 60px;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+.speed:hover {
+  transform: scale(1.02);
+}
