@@ -28,6 +28,7 @@ const projects = [
   "event-capture",
   "stripe-follow-along-dropdown",
   "click-and-drag-to-scroll",
+  "video-speed-controller-ui",
 ];
 
 function stringUpdate(str) {
