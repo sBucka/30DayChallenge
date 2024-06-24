@@ -29,6 +29,7 @@ const projects = [
   "stripe-follow-along-dropdown",
   "click-and-drag-to-scroll",
   "video-speed-controller-ui",
+  "countdown-clock",
 ];
 
 function stringUpdate(str) {
