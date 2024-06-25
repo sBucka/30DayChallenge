@@ -30,6 +30,7 @@ const projects = [
   "click-and-drag-to-scroll",
   "video-speed-controller-ui",
   "countdown-clock",
+  "whack-a-mole-game",
 ];
 
 function stringUpdate(str) {
