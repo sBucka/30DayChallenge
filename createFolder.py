@@ -59,7 +59,7 @@ class CreateFolder:
         self.createJs()
 
 if __name__ == "__main__":
-    cf = CreateFolder("29 Countdown Clock")
+    cf = CreateFolder("30 Whack A Mole Game")
     cf.createAll()
     
     
